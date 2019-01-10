@@ -2,7 +2,7 @@
 
 ## Automatic
 
-You can use an USB drive with HassOS to configure network options, SSH access to the host and to install updates.
+You can use a USB drive with HassOS to configure network options, SSH access to the host and to install updates.
 Format a USB stick with FAT32/EXT4/NTFS and name it `CONFIG`. Alternative you can create a `CONFIG` folder inside boot partition. Use the following directory structure within the USB drive:
 
 ```text
@@ -40,12 +40,12 @@ The udev rules folder `/etc/udev/rules.d` is persistent and you can add your con
 
 ### Network
 
-You can manual add, edit or remove connections configurations from `/etc/NetworkManager/system-connections`.
+You can manually add, edit or remove connection configurations from `/etc/NetworkManager/system-connections`.
 
 ### NTP
 
-You can manual edit the systemd timesync file on `/etc/systemd/timesyncd.conf`.
-Our default ntp configuration look like:
+You can manually edit the systemd timesync file on `/etc/systemd/timesyncd.conf`.
+Our default NTP configuration looks like:
 ```
 [Time]
 NTP=time1.google.com time2.google.com time3.google.com
